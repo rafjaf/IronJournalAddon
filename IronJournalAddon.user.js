@@ -58,7 +58,7 @@
         }
     }
 
-    async function changeProgress(e) {
+    function changeProgress(e) {
         let track = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.querySelectorAll(PROGRESS.map(el => "i." + el).join(","));
         // Determine track progress rate
         let trackProgressRate = Array.from(e.target.parentElement.parentElement.parentElement.querySelectorAll("button"))
